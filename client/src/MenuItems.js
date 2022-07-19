@@ -10,13 +10,8 @@ export const MenuItems = [
     active: false
   },
   {
-    title: 'Work History',
-    path: '/history',
-    active: false
-  },
-  {
-    title: 'Contact',
-    path: '/contact',
+    title: 'About',
+    path: '/about',
     active: false
   }
 ]
