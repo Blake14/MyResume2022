@@ -4,7 +4,7 @@ import { Portfolio } from "./Portfolio"
 import { WorkHistory } from "./WorkHistory"
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { NavigationBar } from "./NavigationBar"
-import backdrop from './wallpaper-resume.jpg'
+import backdrop from './assets/wallpaper-resume.jpg'
 import { AboutMe } from "./AboutMe"
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 
@@ -39,9 +39,8 @@ const App = () => {
     <div style={{
       display: 'flex',
       justifyContent: 'space-evenly',
-      position: 'absolute',
-      bottom: 0,
-      width: '100%'
+      width: '100%',
+      marginTop: 100
     }}>
       <div style={{
         height: 75,

@@ -1,5 +1,5 @@
 import Image from 'react-bootstrap/Image'
-import logo from './blakeLogo.png'
+import logo from './assets/blakeLogo.png'
 import { MenuItems } from "./MenuItems"
 import { useNavigate } from 'react-router-dom'
 import './App.css'
