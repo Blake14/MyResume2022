@@ -7,9 +7,14 @@ import { NavigationBar } from "./NavigationBar"
 import backdrop from './assets/wallpaper-resume.jpg'
 import { AboutMe } from "./AboutMe"
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
+import { ProjectView } from "./ProjectView"
+import { useState } from 'react'
 
 const App = () => {
   document.body.style.backgroundColor = 'white'
+
+  const [openProject, setOpenProject] = useState(0)
+
   return <Router>
     <div style={{
       backgroundImage: `url(${backdrop})`,
@@ -32,7 +37,8 @@ const App = () => {
           <Route path="/history" element={<WorkHistory />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<AboutMe />} />
-          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/portfolio" element={<Portfolio setOpenProject={setOpenProject} />} />
+          <Route path="/projectviewer" element={<ProjectView openProject={openProject} setOpenProject={setOpenProject} />} />
         </Route>
       </Routes>
     </div>
