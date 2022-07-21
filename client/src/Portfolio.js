@@ -60,7 +60,6 @@ export const Portfolio = (props) => {
         </Form.Select>
       </div>
     </div>
-
     <div style={{
       display: 'flex',
       flexWrap: 'wrap',

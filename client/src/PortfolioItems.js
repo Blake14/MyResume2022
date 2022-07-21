@@ -4,6 +4,8 @@ import Project3Cover from './assets/MESWikiImage.png'
 import Project4Cover from './assets/WoodenFloor.png'
 import Project5Cover from './assets/Bedroom-Blender.png'
 import Project6Cover from './assets/unleashed-img.png'
+import Project7Cover from './assets/factory-flow-wire.png'
+import Project8Cover from './assets/factory-flow3.png'
 
 export const PortfolioItems = [
   {
@@ -28,7 +30,7 @@ export const PortfolioItems = [
     id: 3,
     name: 'Factory 3D Model',
     skills: ['3D', 'Animation', 'Design', 'Game Development'],
-    images: [Project2Cover],
+    images: [Project2Cover, Project7Cover, Project8Cover],
     category: 'Blender',
     summary: '',
     review: ''
