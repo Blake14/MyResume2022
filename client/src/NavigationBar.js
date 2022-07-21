@@ -1,5 +1,5 @@
 import Image from 'react-bootstrap/Image'
-import logo from './blakeLogo.png'
+import logo from './assets/blakeLogo.png'
 import { MenuItems } from "./MenuItems"
 import { useNavigate } from 'react-router-dom'
 import './App.css'
@@ -17,11 +17,11 @@ export const NavigationBar = () => {
     justifyContent: 'space-evenly',
     margin: 20
   }}>
-    <Image src={logo} style={{ width: 400, height: 80 }} onClick={() => navigate("/")}></Image>
+    <Image src={logo} style={{ width: 450, height: 80, cursor: 'pointer' }} onClick={() => navigate("/")}></Image>
     <div style={{
       display: 'flex',
       justifyContent: 'space-evenly',
-      width: 500
+      width: 600
     }}>
       {MenuItems.map((item, index) => {
         if (item.title === activeMenuItem) {
@@ -34,7 +34,7 @@ export const NavigationBar = () => {
         } else {
           return <div style={{
             width: 200
-          }}>
+          }} key={index}>
             <div><p style={linkStyle} onClick={() => {
               navigate(item.path)
               setActiveMenuItem(item.title)
